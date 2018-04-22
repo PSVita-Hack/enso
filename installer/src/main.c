@@ -676,14 +676,14 @@ int main(int argc, char *argv[]) {
 			press_exit();
 	}
 #endif
-
+    printf("\n");
 	printf("This software will make PERMANENT modifications to your Vita. If anything goes wrong, \n"
 		   "there is NO RECOVERY (not even with a hardware flasher). The creators provide this \n"
 		   "tool \"as is\", without warranty of any kind, express or implied and cannot be held \n"
 		   "liable for any damage done.\n\n");
-	printf("Press CIRCLE to accept these terms or any other key to not accept.\n\n");
+	printf("Press CROSS(X) to accept these terms or any other key to not accept.\n\n");
 
-	if (get_key() != SCE_CTRL_CIRCLE) {
+	if (get_key() != SCE_CTRL_CROSS) {
 		press_exit();
 	}
 
@@ -692,7 +692,7 @@ int main(int argc, char *argv[]) {
 		goto cleanup;
 
 	printf("Options:\n\n");
-	printf("  CROSS      Install/reinstall the hack.\n");
+	printf("  CROSS(X)      Install/reinstall the hack.\n");
 	printf("  TRIANGLE   Uninstall the hack.\n");
 	printf("  SQUARE     Fix boot configuration (choose this if taiHEN isn't loading on boot).\n");
 	printf("  CIRCLE     Exit without doing anything.\n\n");
