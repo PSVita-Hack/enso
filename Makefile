@@ -1,6 +1,6 @@
-CC=arm-vita-eabi-gcc
+CC=/usr/local/vitasdk/bin/arm-vita-eabi-gcc
 CFLAGS=-Os -fno-builtin-printf -fPIC -fno-builtin-memset -Wall -Wextra -Wno-unused-variable -DFW_360
-OBJCOPY=arm-vita-eabi-objcopy
+OBJCOPY=/usr/local/vitasdk/bin/arm-vita-eabi-objcopy
 LDFLAGS=-nodefaultlibs -nostdlib
 
 fat.bin: first.bin second.bin
