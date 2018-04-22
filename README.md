@@ -15,6 +15,7 @@ enso 是固化PSVITA的工具。
 ```shell
 make # 生成 fat.bin
 mv fat.bin installer/res
+cd installer
 mkdir build && cd build
 cmake .. && make
 ```
